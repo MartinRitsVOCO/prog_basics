@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Martin Ritsberg">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="description" content="Väärtuste vahetuse ülesanne">
+    <title>Väärtuste vahetus</title>
+</head>
+<body>
+    <form>
+        <input type="number" name="a" id="a" value="10"><br>
+        <input type="number" name="b" id="b" value="20"><br>
+        <button type="submit" onclick="
+            event.preventDefault();
+            let a = document.getElementById('a').value;
+            let b = document.getElementById('b').value;
+            let vaartused = [a, b];
+            a = vaartused[1];
+            b = vaartused[0];
+            document.getElementById('a').value = a;
+            document.getElementById('b').value = b;
+        ">Vaheta väärtused</button>
+    </form>
+</body>
+</html>
