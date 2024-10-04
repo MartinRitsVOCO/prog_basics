@@ -1,0 +1,9 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+button {
+    padding: 5px 25px;
+    border-radius: 5px;
+}
