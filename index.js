@@ -35,7 +35,7 @@ const ageButton = document.getElementById('ageButton');
 
 ageButton.onclick = function() {
     const age = ageField.value;
-    if (Number.isInteger) {
+    if (!isNaN(age)) {
         if (age <= 16 && age >= 7) {
             alert('Sa lähed sööma kell 10');
         }
