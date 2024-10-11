@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Martin Ritsberg">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Progameerimise harjutus">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <Label for="esimeneNumber">Sisesta esimene arv:</Label>
+        <input type="text" id="esimeneNumber"><br>
+
+        <Label for="teineNumber">Sisesta teine arv:</Label>
+        <input type="text" id="teineNumber"><br>
+
+        <label for="operatsioon">Vali tehteoperatsioon:</label>
+        <input list="operatsioonid" name="operatsioon" id="operatsioon">
+        <datalist id="operatsioonid">
+            <option value="+">Liida</option>
+            <option value="-">Lahuta</option>
+            <option value="*">Korruta</option>
+            <option value="/">Jaga</option>
+            <option value="^">Astenda</option>
+            <option value="%">Jääk</option>
+        </datalist><br>
+
+        <input type="submit" value="Arvuta" id="arvuta">
+    </form>
+
+    <div id="tulemus"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
