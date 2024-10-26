@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Martin Ritsberg">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Progameerimise harjutus">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Temperature conversion</h1>
+
+        <fieldset>
+            <h2>Enter source temperature</h2>
+            <label for="sourceTemp">Temperature:</label>
+            <input type="number" name="sourceTemp" id="sourceTemp" min="0" step="0.1" value="0" onchange="calculateTemperatures">
+        </fieldset>
+
+        <fieldset>
+            <h2>
+                Select temperature unit for source temperature
+            </h2>
+            <label>
+                <input type="radio" name="tempUnit" id="unitC" value="C" checked>
+                Celsius
+            </label>
+            <label>
+                <input type="radio" name="tempUnit" id="unitF" value="F">
+                Fahrenheit
+            </label>
+            <label>
+                <input type="radio" name="tempUnit" id="unitK" value="K">
+                Kelvin
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <h2>
+                Temperature in other units
+            </h2>
+            <label for="resultC">Celsius:</label>
+            <input type="text" name="resultC" id="resultC" disabled>
+            <label for="resultF">Fahrenheit:</label>
+            <input type="text" name="resultF" id="resultF" disabled>
+            <label for="resultK">Kelvin:</label>
+            <input type="text" name="resultK" id="resultK" disabled>
+        </fieldset>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
