@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Martin Ritsberg">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Progameerimise harjutus">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Dice Roller
+        </h1>
+        <form>
+            <label for="diceNumber"># of Dice</label>
+            <input type="number" name="diceNumber" id="diceNumber" value="3" min="1" max="100" required>
+            <input type="submit" value="Roll Dice" id="diceRollButton">
+        </form>
+        <div id="diceContainer">
+            <p id="diceCounter"></p>
+            <div id="diceGrid"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
